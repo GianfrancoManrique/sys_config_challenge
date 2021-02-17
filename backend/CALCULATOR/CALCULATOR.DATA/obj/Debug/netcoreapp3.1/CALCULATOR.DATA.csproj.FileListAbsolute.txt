@@ -1,0 +1,17 @@
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.DATA.deps.json
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.DATA.runtimeconfig.json
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.DATA.runtimeconfig.dev.json
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.DATA.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.DATA.pdb
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.APPLICATION.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.DOMAIN.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.APPLICATION.pdb
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\bin\Debug\netcoreapp3.1\CALCULATOR.DOMAIN.pdb
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\obj\Debug\netcoreapp3.1\CALCULATOR.DATA.csprojAssemblyReference.cache
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\obj\Debug\netcoreapp3.1\CALCULATOR.DATA.AssemblyInfoInputs.cache
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\obj\Debug\netcoreapp3.1\CALCULATOR.DATA.AssemblyInfo.cs
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\obj\Debug\netcoreapp3.1\CALCULATOR.DATA.csproj.CoreCompileInputs.cache
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\obj\Debug\netcoreapp3.1\CALCULATOR.DATA.csproj.CopyComplete
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\obj\Debug\netcoreapp3.1\CALCULATOR.DATA.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\obj\Debug\netcoreapp3.1\CALCULATOR.DATA.pdb
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DATA\obj\Debug\netcoreapp3.1\CALCULATOR.DATA.genruntimeconfig.cache
