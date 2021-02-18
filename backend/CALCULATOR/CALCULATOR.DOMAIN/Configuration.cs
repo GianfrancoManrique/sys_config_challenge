@@ -10,6 +10,9 @@ namespace CALCULATOR.DOMAIN
         public int ConfigurationId { get; set; }
 
         [Required][Column(TypeName = "varchar(10)")]
+        public string State { get; set; }
+
+        [Required][Column(TypeName = "varchar(10)")]
         public string MonthOfBirth { get; set; }
 
         [Required]
