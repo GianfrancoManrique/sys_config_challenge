@@ -36,8 +36,8 @@ function fnGetValue(e) {
 
     $.ajax({
         type: "POST",
-        //url: "https://precalculatorapi.azurewebsites.net/api/Configuration",
-        url: "https://localhost:44353/api/Configuration",
+        url: "https://precalculatorapi.azurewebsites.net/api/Configuration",
+        //url: "https://localhost:44353/api/Configuration",
         // The key needs to match your method's input parameter (case-sensitive).
         data: JSON.stringify({ dateOfBirth: "1990-01-09", state: "NY", age: 31 }),
         contentType: "application/json; charset=utf-8",
