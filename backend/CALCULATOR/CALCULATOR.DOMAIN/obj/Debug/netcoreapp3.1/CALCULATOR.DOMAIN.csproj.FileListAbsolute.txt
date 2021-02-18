@@ -6,3 +6,4 @@ E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULA
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Debug\netcoreapp3.1\CALCULATOR.DOMAIN.csproj.CoreCompileInputs.cache
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Debug\netcoreapp3.1\CALCULATOR.DOMAIN.dll
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Debug\netcoreapp3.1\CALCULATOR.DOMAIN.pdb
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Debug\netcoreapp3.1\CALCULATOR.DOMAIN.csprojAssemblyReference.cache

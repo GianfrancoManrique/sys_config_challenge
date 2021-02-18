@@ -68,3 +68,9 @@ E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULA
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Humanizer.dll
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\obj\Debug\netcoreapp3.1\CALCULATOR.API.MvcApplicationPartsAssemblyInfo.cs
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Dapper.dll

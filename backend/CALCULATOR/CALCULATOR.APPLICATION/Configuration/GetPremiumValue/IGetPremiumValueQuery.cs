@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CALCULATOR.APPLICATION.Configuration.GetPremiumResult
+namespace CALCULATOR.APPLICATION.Configuration.GetPremiumValue
 {
     public interface IGetPremiumValueQuery
     {

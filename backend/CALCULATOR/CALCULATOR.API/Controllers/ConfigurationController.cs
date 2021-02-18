@@ -1,5 +1,4 @@
-﻿using CALCULATOR.APPLICATION.Configuration.GetPremiumResult;
-using CALCULATOR.APPLICATION.Configuration.GetPremiumValue;
+﻿using CALCULATOR.APPLICATION.Configuration.GetPremiumValue;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
