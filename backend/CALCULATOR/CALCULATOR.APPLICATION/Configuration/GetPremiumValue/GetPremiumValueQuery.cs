@@ -2,6 +2,7 @@
 using CALCULATOR.APPLICATION.Configuration.GetPremiumValue;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,9 +23,11 @@ namespace CALCULATOR.APPLICATION.Configuration.GetPremiumValue
 
         public async Task<GetPremiumValueModel> Execute(GetPremiumParamsModel model)
         {
-            string _monthofbirth = model.DateOfBirth.Month.ToString();
+            DateTimeFormatInfo dtinfo = new CultureInfo("en-US", false).DateTimeFormat;
 
-            var result = await _databasec.GetSingleAsync<GetPremiumValueModel>("usp_SelPremiumValue",
+            string _monthofbirth = dtinfo.GetMonthName(model.DateOfBirth.Month);
+
+            var result = await _databasec.GetSingleAsync<GetPremiumValueModel>("USP_SelPremiumValue",
                          new { monthofbirth = _monthofbirth, state = model.State, age = model.Age });
 
             GetPremiumValueModel premiumValue = _IMapper.Map<GetPremiumValueModel>(result);
