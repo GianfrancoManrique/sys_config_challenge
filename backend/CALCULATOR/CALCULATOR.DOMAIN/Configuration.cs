@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CALCULATOR.DOMAIN
 {
-    public class Configuration
+    public class PremiumConfiguration
     {
         [Key]
         public int ConfigurationId { get; set; }
@@ -23,5 +23,7 @@ namespace CALCULATOR.DOMAIN
         [Required][Column(TypeName = "decimal(8,2)")]
         public float Premium { get; set; }
 
+        [Required]
+        public int Priority { get; set; }
     }
 }

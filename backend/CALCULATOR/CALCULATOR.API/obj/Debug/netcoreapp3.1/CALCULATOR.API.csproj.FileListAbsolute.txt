@@ -67,3 +67,4 @@ E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULA
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\obj\Debug\netcoreapp3.1\CALCULATOR.API.csproj.CopyComplete
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Humanizer.dll
 E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.API\bin\Debug\netcoreapp3.1\AutoMapper.dll

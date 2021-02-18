@@ -8,6 +8,6 @@ namespace CALCULATOR.APPLICATION
 {
     public interface IDatabaseService
     {
-        DbSet<Configuration> Configurations { get; set; }
+        DbSet<PremiumConfiguration> PremiumConfigurations { get; set; }
     }
 }

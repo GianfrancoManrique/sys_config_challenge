@@ -7,7 +7,7 @@ namespace CALCULATOR.DATA
 {
     public class DatabaseService: DbContext, IDatabaseService
     {
-        public DbSet<Configuration> Configurations { get; set; }
+        public DbSet<PremiumConfiguration> PremiumConfigurations { get; set; }
 
         public DatabaseService(DbContextOptions<DatabaseService> options) : base(options)
         {
