@@ -1,0 +1,9 @@
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\bin\Release\netcoreapp3.1\CALCULATOR.DOMAIN.deps.json
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\bin\Release\netcoreapp3.1\CALCULATOR.DOMAIN.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\bin\Release\netcoreapp3.1\CALCULATOR.DOMAIN.pdb
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Release\netcoreapp3.1\CALCULATOR.DOMAIN.csprojAssemblyReference.cache
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Release\netcoreapp3.1\CALCULATOR.DOMAIN.AssemblyInfoInputs.cache
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Release\netcoreapp3.1\CALCULATOR.DOMAIN.AssemblyInfo.cs
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Release\netcoreapp3.1\CALCULATOR.DOMAIN.csproj.CoreCompileInputs.cache
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Release\netcoreapp3.1\CALCULATOR.DOMAIN.dll
+E:\GIANFRANCO\PROYECTOS\TRANZACT\sys_config_challenge\backend\CALCULATOR\CALCULATOR.DOMAIN\obj\Release\netcoreapp3.1\CALCULATOR.DOMAIN.pdb
