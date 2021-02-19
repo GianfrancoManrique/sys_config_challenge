@@ -14,17 +14,16 @@ function fnConfigureComponents() {
     document.getElementById("frecuencie").disabled = true;
 
     document.getElementById("dateofbirthlbl").style.display = 'none';
+    document.getElementById("isValidDateofBirthlbl").style.display = 'none';
+
     document.getElementById("statelbl").style.display = 'none';
-    document.getElementById("parameterslbl").style.display = 'none';
+    document.getElementById("isValidStatelbl").style.display = 'none';
+
 }
 
 function fnSetDateOfBirth(e) {
 
     e.preventDefault();
-
-    isValidDateofBirth = false;
-
-    document.getElementById("btnGetValue").disabled = true;
 
     dateOfBirthParts = document.getElementById('dateofbirth').value.split("-");
 
@@ -36,19 +35,22 @@ function fnSetDateOfBirth(e) {
 
     if (isNaN(edad) || edad < 18) {
 
-        isValidDateofBirth = false;
+        document.getElementById("isValidDateofBirthlbl").innerHTML = '0';
         document.getElementById("dateofbirthlbl").style.display = 'block';
         document.getElementById('age').value = "";
 
+        fnClearPremiumValues();
+
     } else {
 
-        isValidDateofBirth = true;
+        document.getElementById("isValidDateofBirthlbl").innerHTML = '1';
         document.getElementById("dateofbirthlbl").style.display = 'none';
         document.getElementById('age').value = edad;
 
     }
 
-    document.getElementById("btnGetValue").disabled = !isValidDateofBirth;
+    fnValidateParameters();
+
 }
 
 function fnCalculateAge(dateofbirth, today) {
@@ -65,20 +67,20 @@ function fnCalculateAge(dateofbirth, today) {
 
 function fnSetState(e) {
 
-    isValidState = false;
-    document.getElementById("btnGetValue").disabled = true;
-
     if (this.value.trim().length == 0) {
 
         document.getElementById("statelbl").style.display = 'block';
-        document.getElementById("btnGetValue").disabled = true;
+        document.getElementById("isValidStatelbl").innerHTML = '0';
+
+        fnClearPremiumValues();
 
     } else {
-        isValidState = true;
+
         document.getElementById("statelbl").style.display = 'none';
+        document.getElementById("isValidStatelbl").innerHTML = '1';
     }
 
-    document.getElementById("btnGetValue").disabled = !isValidState;
+    fnValidateParameters();
 
 }
 
@@ -86,19 +88,15 @@ function fnGetPremiumValue(e) {
 
     e.preventDefault();
 
-    document.getElementById('premium').value = "";
-    document.getElementById('monthly').value = "";
-    document.getElementById('annual').value = "";
+    fnClearPremiumValues();
 
     var _dateOfBirth = document.getElementById('dateofbirth').value;
     var _state = document.getElementById('state').value;
     var _age = document.getElementById('age').value;
 
-    var fieldsValid = fnValidDateOfBirth(_dateOfBirth) && fnValidState(_state) && fnValidAge(_age);
+    var fieldsValid = fnValidAge(_age);
 
-    if (fieldsValid) {
-
-        document.getElementById("parameterslbl").style.display = 'none';
+    if (fnValidAge(_age)) {
 
         $.ajax({
             type: "POST",
@@ -121,7 +119,7 @@ function fnGetPremiumValue(e) {
         });
     } else {
 
-        alert('Parameters for premium value are invalid');
+        alert('Parameters are invalid');
     }
 
 }
@@ -146,19 +144,6 @@ function fnGetValues(e) {
 
 }
 
-function fnValidDateOfBirth(dateOfBirth) {
-    return true;
-}
-
-function fnValidState(state) {
-
-    if (state.trim().length > 0) {
-        return true;
-    }
-
-    return false;
-}
-
 function fnValidAge(age) {
     var regex = /^[0-9]+$/;
 
@@ -167,4 +152,23 @@ function fnValidAge(age) {
     }
 
     return false;
+}
+
+function fnValidateParameters() {
+
+    document.getElementById("btnGetValue").disabled = true;
+
+    var isValidDateofBirth = Number(document.getElementById("isValidDateofBirthlbl").innerHTML);
+    var isValidState = Number(document.getElementById("isValidStatelbl").innerHTML);
+
+    if (isValidDateofBirth == 1 && isValidState == 1) {
+        document.getElementById("btnGetValue").disabled = false;
+    }
+}
+
+function fnClearPremiumValues() {
+    document.getElementById('frecuencie').value = "0";
+    document.getElementById('premium').value = "";
+    document.getElementById('monthly').value = "";
+    document.getElementById('annual').value = "";
 }

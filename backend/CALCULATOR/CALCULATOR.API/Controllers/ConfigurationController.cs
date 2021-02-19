@@ -47,8 +47,9 @@ namespace CALCULATOR.API.Controllers
             if(dateOfBirth <= DateTime.Now)
             {
                 int _age = DateTime.Now.Year - dateOfBirth.Year;
+                int _monthDif = DateTime.Now.Month - dateOfBirth.Month;
 
-                if (dateOfBirth.Month>DateTime.Now.Month) 
+                if (_monthDif<0 || (_monthDif==0 && DateTime.Now.Day< dateOfBirth.Day)) 
                 {
                     _age = _age - 1;
                 }

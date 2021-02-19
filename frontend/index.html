@@ -12,10 +12,6 @@
         #statelbl {
             color: #FF0000;
         }
-        
-        #parameterslbl {
-            color: #FF0000;
-        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -28,11 +24,13 @@
                 <td>Date of Birth:</td>
                 <td><input type="date" id="dateofbirth" name="dateofbirth"></td>
                 <td><label id="dateofbirthlbl">Invalid date of birth or age is less than 18</label></td>
+                <td><label id="isValidDateofBirthlbl">0</label></td>
             </tr>
             <tr>
                 <td>State:</td>
                 <td><input type="text" id="state"></td>
                 <td><label id="statelbl">Invalid state</label></td>
+                <td><label id="isValidStatelbl">0</label></td>
             </tr>
             <tr>
                 <td>Age:</td>
@@ -55,7 +53,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><label id="parameterslbl">Parameters invalid</label></td>
+                <td></td>
                 <td></td>
                 <td>Monthly</td>
                 <td><input type="text" id="monthly" disabled></td>
