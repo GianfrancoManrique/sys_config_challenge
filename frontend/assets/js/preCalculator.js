@@ -1,7 +1,9 @@
 $(document).ready(function() {
     //$("#datepicker").datepicker();
     $("#dateofbirth").on("change", fnLoad);
-    $("#btnGetValue").on("click", fnGetValue);
+    $("#btnGetValue").on("click", fnGetPremiumValue);
+    $("#frecuencie").on("change", fnGetValues);
+    document.getElementById("frecuencie").disabled = true;
 });
 
 function fnLoad(e) {
@@ -30,21 +32,75 @@ function fnCalculateAge(_dateofbirth) {
     return age;
 }
 
-function fnGetValue(e) {
+function fnGetPremiumValue(e) {
 
     e.preventDefault();
 
-    $.ajax({
-        type: "POST",
-        url: "https://precalculatorapi.azurewebsites.net/api/Configuration",
-        //url: "https://localhost:44353/api/Configuration",
-        // The key needs to match your method's input parameter (case-sensitive).
-        data: JSON.stringify({ dateOfBirth: "1990-01-09", state: "NY", age: 31 }),
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function(data) { console.log(data); },
-        error: function(errMsg) {
-            console.log(errMsg);
-        }
-    });
+    document.getElementById('premium').value = "";
+    document.getElementById('monthly').value = "";
+    document.getElementById('annual').value = "";
+
+    var _dateOfBirth = document.getElementById('dateofbirth').value;
+    var _state = document.getElementById('state').value;
+    var _age = document.getElementById('age').value;
+
+    var fieldsValid = fnValidDateOfBirth(_dateOfBirth) && fnValidState(_state) && fnValidAge(_age);
+
+    if (fieldsValid) {
+
+        $.ajax({
+            type: "POST",
+            url: "https://precalculatorapi.azurewebsites.net/api/Configuration",
+            data: JSON.stringify({ dateOfBirth: _dateOfBirth, state: _state, age: Number(_age) }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(data) {
+                document.getElementById('premium').value = data.premium;
+                document.getElementById("frecuencie").disabled = false;
+            },
+            error: function(errMsg) {
+                console.log(errMsg);
+                document.getElementById('premium').value = "";
+                document.getElementById('monthly').value = "";
+                document.getElementById('annual').value = "";
+            }
+        });
+    } else {
+        alert('Error in parameters');
+    }
+
+}
+
+function fnGetValues(e) {
+
+    e.preventDefault();
+    premium = Number(document.getElementById("premium").value);
+    frecuencie = Number(document.getElementById("frecuencie").value);
+    var annual = premium * (12 / frecuencie),
+        monthly = premium / frecuencie;
+
+    document.getElementById("annual").value = annual;
+    document.getElementById("monthly").value = monthly;
+}
+
+function fnValidDateOfBirth(dateOfBirth) {
+    return true;
+}
+
+function fnValidState(state) {
+    if (state.length == 0) {
+        return false;
+    }
+
+    return true;
+}
+
+function fnValidAge(age) {
+    var regex = /^[0-9]+$/;
+
+    if (age.match(regex)) {
+        return true;
+    }
+
+    return false;
 }

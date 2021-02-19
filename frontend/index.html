@@ -9,10 +9,44 @@
 
 <body>
     <h1>Premium Calculator</h1>
-    <p>Date of Birth: <input type="date" id="dateofbirth"></p>
-    <p>State: <input type="text" id="state"></p>
-    <p>Age: <input type="text" id="age"></p>
-    <button id="btnGetValue">Get Value</button>
+    <table>
+        <tbody>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" id="dateofbirth"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" id="state"></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text" id="age" disabled></td>
+            </tr>
+            <tr>
+                <td> <button id="btnGetValue">Get Value</button></td>
+                <td> <input type="text" id="premium" disabled> <br></td>
+                <td>
+                    <select name="frecuencie" id="frecuencie">
+                        <option value="0" selected>Select</option>
+                        <option value="1" >Monthly</option>
+                        <option value="3" >Quarterly</option>
+                        <option value="6" >Semi-Annually</option>
+                        <option value="12">Annually</option>
+                    </select>
+                </td>
+                <td>Annual</td>
+                <td><input type="text" id="annual" disabled></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Monthly</td>
+                <td><input type="text" id="monthly" disabled></td>
+            </tr>
+        </tbody>
+    </table>
     <script type="text/javascript" src="assets/js/preCalculator.js  "></script>
 </body>
 
