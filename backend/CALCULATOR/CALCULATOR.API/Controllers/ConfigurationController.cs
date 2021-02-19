@@ -34,6 +34,9 @@ namespace CALCULATOR.API.Controllers
 
             var configuration = await _IGetPremiumValueQuery.Execute(model);
 
+            if(configuration==null)
+                return BadRequest("There isn't a premium value for these parameters.");
+
             return Ok(configuration);
         }
 
