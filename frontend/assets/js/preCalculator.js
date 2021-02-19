@@ -25,6 +25,8 @@ function fnSetDateOfBirth(e) {
 
     e.preventDefault();
 
+    fnClearPremiumValues();
+
     dateOfBirthParts = document.getElementById('dateofbirth').value.split("-");
 
     dateOfBirth = new Date(dateOfBirthParts[0], dateOfBirthParts[1] - 1, +dateOfBirthParts[2]);
@@ -66,6 +68,8 @@ function fnCalculateAge(dateofbirth, today) {
 }
 
 function fnSetState(e) {
+
+    fnClearPremiumValues();
 
     if (this.value.trim().length == 0) {
 
