@@ -100,8 +100,8 @@ function fnGetPremiumValue(e) {
 
         $.ajax({
             type: "POST",
-            //url: "https://precalculatorapi.azurewebsites.net/api/Configuration",
-            url: "https://localhost:44353/api/Configuration",
+            url: "https://precalculatorapi.azurewebsites.net/api/Configuration",
+            //url: "https://localhost:44353/api/Configuration",
             data: JSON.stringify({ dateOfBirth: _dateOfBirth, state: _state, age: Number(_age) }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
