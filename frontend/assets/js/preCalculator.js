@@ -118,7 +118,6 @@ function fnGetPremiumValue(e) {
             }
         });
     } else {
-
         alert('Parameters are invalid');
     }
 
